@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 
-
-namespace AssemblyBrowserLib
+namespace AssemblyBrowserLibrary
 {
-    class AssemblyBrowser
+    public class AssemblyBrowser
     {
         private Assembly assembly { get; set; }
 

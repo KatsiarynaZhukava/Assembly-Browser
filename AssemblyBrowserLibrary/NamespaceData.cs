@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace AssemblyBrowserLib
+namespace AssemblyBrowserLibrary
 {
-    class NamespaceData
+    public class NamespaceData
     {
         public string Name { get; set; }
         public List<TypeData> Types { get; set; } = new List<TypeData>();

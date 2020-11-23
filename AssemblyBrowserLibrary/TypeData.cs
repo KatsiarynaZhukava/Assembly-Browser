@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 
-namespace AssemblyBrowserLib
+namespace AssemblyBrowserLibrary
 {
-    class TypeData
+    public class TypeData
     {
         public TypeInfo TypeInfo { get; private set; }
         public List<MethodInfo> Methods { get; private set; } = new List<MethodInfo>();

@@ -20,36 +20,13 @@ namespace AsssemblyBrowserApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        static TreeViewItem item;
-        static public void Show(TreeView tree)
-        {
-            //DataSet datasSet = Class.GetDS();
-
-            /*for (int i = 0; dsSet.Tables[0].Rows.Count > i; i++)
-            {
-                item = new TreeViewItem();
-                //item.Header = dsSet.Tables[0].Rows[i][1];
-
-                for (int j = 0; j < 2; j++)
-                {
-                    item.Items.Add("Monitor");
-                    item.Items.Add("LapTop");
-                }
-                tree.Items.Add(item);
-            }*/
-        }
-        //Show(treeView);
+        
 
         public MainWindow()
         {
             InitializeComponent();
 
-            
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            DataContext = new ViewModel.ApplicationViewModel();
         }
     }
 }

@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AsssemblyBrowserApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TreeView x:Name="treeView"  HorizontalAlignment="Left" Height="400
-                  " Margin="10,10,10,10" VerticalAlignment="Top" Width="500" >
-            <TreeView Height="375" VerticalAlignment="Top" Width="473"/>
+        Title="MainWindow" Height="490" Width="743">
+    <Grid Margin="0,0,3,-29.333">
+        <TreeView x:Name="treeView"  HorizontalAlignment="Left" Height="346" Margin="10,10,0,0" VerticalAlignment="Top" Width="713" >
+            <TreeView.Resources>
+                <!--<HierarchicalDataTemplate ItemsSource="{Binding Path=Nodes}">
+                    <TextBlock Text="{Binding Name}" />
+                </HierarchicalDataTemplate>-->
+            </TreeView.Resources>
         </TreeView>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="607,35,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Choose Assembly" HorizontalAlignment="Left" Margin="310,376,0,0" VerticalAlignment="Top" Width="131" Height="41" Command="{Binding GetAssemblyCommand}"/>
     </Grid>
 </Window>

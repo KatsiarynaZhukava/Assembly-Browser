@@ -9,7 +9,7 @@ namespace DemoAssemblies.Envelope
     public class Envelope : Container
     {
 
-        public Envelope()
+        public Envelope(bool isEmpty) : base(isEmpty)
         {
 
         }
