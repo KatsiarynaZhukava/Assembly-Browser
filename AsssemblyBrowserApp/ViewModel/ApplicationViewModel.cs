@@ -1,13 +1,13 @@
 ﻿using AsssemblyBrowserApp.ViewModel.Command;
 using System.ComponentModel;
-using System.Reflection;
 using System.Runtime.CompilerServices;
+using AssemblyBrowserLibrary;
 
 namespace AsssemblyBrowserApp.ViewModel
 {
     class ApplicationViewModel : INotifyPropertyChanged
     {
-        private Assembly assembly = null;
+        private AssemblyData assembly = null;
         private OpenDialogService dialogService = new OpenDialogService();
         private DataSource dataSource = new DataSource();
 
@@ -23,7 +23,8 @@ namespace AsssemblyBrowserApp.ViewModel
         {
             if (dialogService.OpenFileDialog())
             {
-
+                assembly = dataSource.GetAssembly(dialogService.FilePath);
+                int i = 0;
             }
         }
 

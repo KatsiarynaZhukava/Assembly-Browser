@@ -16,10 +16,5 @@ namespace AsssemblyBrowserApp.ViewModel
             }
             return false;
         }
-
-            /*public void ShowMessage(string message)
-            {
-                MessageBox.Show(message);
-            }*/
     }
 }
